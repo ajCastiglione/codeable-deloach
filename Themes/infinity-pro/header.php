@@ -88,8 +88,9 @@ echo "</div> <!-- .techreative-header -->";
 /****************************************/
 
 
-
-
+/** Added on 10/18/2020 - enqueue fontawesome */
+wp_enqueue_style('fontawesome-infinity', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css', null, null, false);
+/** end fontawesome enqueue */
 
 /**
  * Fires to display the main header content.
