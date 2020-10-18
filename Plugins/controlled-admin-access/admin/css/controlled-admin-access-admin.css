@@ -1,0 +1,86 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+.caa_menuitems{
+	width:auto;
+	float:left;
+	/*background: #ffffff;*/
+	display: block;
+	margin: 0 10px 0 0;
+}
+.caa_arrow{
+	cursor: pointer;
+}
+.caa_menuitems input{
+	width: auto !important;
+}
+.caa_small_field{
+	width:170px !important;
+}
+.caa_field{
+	cursor: auto;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==); 
+	background-attachment: scroll;
+	background-position: 100% 50%; 
+	background-repeat: no-repeat;
+}
+
+#caa_user_info{
+	border: 2px dashed orange !important;
+	width: 40% !important;
+	display: block !important;
+	padding:10px !important;
+}
+
+ul.subitem_menu li{
+	margin: 5px 0 0 15px;
+}
+
+.caa_menuitems ul { 
+  list-style: none;
+  margin: 5px 20px;
+}
+
+.caa_menuitems .subitem_menu{
+	display: none;
+}
+
+table.users .row-actions .activate a{
+	color: green;
+}
+.row-actions .deactivate a{
+	color: grey;
+}
+
+/**
+*	About Page
+**/
+
+#caa_about_page{
+	margin:10px;
+}
+
+#caa_about_page .unit{
+	float: left;
+	margin-top:10px;
+	margin-left:10px;
+	width:47%;
+}
+
+#caa_more_plugins .plugin_icon{
+	vertical-align:middle;
+	padding:2px 10px 2px 10px !important;
+	margin:2px !important;
+	width:70px;
+}
+#caa_more_plugins .plugin_title{
+    vertical-align:bottom;
+    padding:2px 2px 2px 5px !important;
+}
+#caa_more_plugins .plugin_title a{
+	font-size:11pt;
+}
+#caa_more_plugins .plugin_price{
+    padding:2px 2px 2px 5px !important;
+}
