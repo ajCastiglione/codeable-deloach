@@ -6,6 +6,10 @@
  * @license GPL-2.0+
  */
 
+ $(window).on('load', function(e) {
+	//  Testing
+ })
+
 ( function($) {
 
 	var $body         = $( 'body' ),

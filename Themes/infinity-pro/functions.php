@@ -420,28 +420,53 @@ function remove_atomic_block_css()
 	wp_dequeue_style('atomic-blocks-fontawesome');
 }
 
-// add_action( 'wp_enqueue_scripts', 'crunchify_print_scripts_styles' );
-function crunchify_print_scripts_styles()
+function add_rel_preload($html, $handle, $href, $media)
 {
+	if (is_admin())
+		return $html;
 
-	$result = [];
-	$result['scripts'] = [];
-	$result['styles'] = [];
+	// var_dump($handle . ' Links To ' . $href);
+	if (strstr($handle, 'sb_instagram_styles')) {
+		$html = <<<EOT
+<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
+EOT;
+	}
+	if (strstr($handle, 'atomic-blocks-style-css')) {
+		$html = <<<EOT
+<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
+EOT;
+	}
+	if (strstr($handle, 'post-views-counter-frontend')) {
+		$html = <<<EOT
+<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
+EOT;
+	}
+	if (strstr($handle, 'infinity-ionicons')) {
+		$html = <<<EOT
+<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
+EOT;
+	}
+	if (strstr($handle, 'wp-block-library')) {
+		$html = <<<EOT
+<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
+EOT;
+	}
+	if (strstr($handle, 'dashicons')) {
+		$html = <<<EOT
+<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
+EOT;
+	}
+	if (strstr($handle, 'simple-social-icons-font')) {
+		$html = <<<EOT
+<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
+EOT;
+	}
+	if (strstr($handle, 'infinity-pro-gutenberg')) {
+		$html = <<<EOT
+<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
+EOT;
+	}
 
-	// Print all loaded Scripts
-	global $wp_scripts;
-	foreach ($wp_scripts->queue as $script) :
-		$result['scripts'][] =  $wp_scripts->registered[$script]->src . ";";
-	endforeach;
-
-	// Print all loaded Styles (CSS)
-	global $wp_styles;
-	foreach ($wp_styles->queue as $style) :
-		$result['styles'][] =  $wp_styles->registered[$style]->src . ";";
-	endforeach;
-
-	echo "<pre>";
-	var_dump($result);
-	echo "</pre>";
-	return $result;
+	return $html;
 }
+add_filter('style_loader_tag', 'add_rel_preload', 10, 4);
