@@ -3001,3 +3001,32 @@ p, ol, ul {
 body.full-width-content main.content {
 	max-width: 1000px;
 }
+
+/* Updates made on 10/18/20 */
+.techreative-header-widget {
+	padding-left: 12px;
+}
+.techreative-header-widget a {
+	  background-color: #ffffff !important;
+    border-radius: 0px;
+    color: #002a5c !important;
+    border: 0px #ffffff solid !important;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.techreative-header-widget a:hover {
+	  background-color: #002a5c !important;
+    border-color: #ffffff !important;
+    color: #ffffff !important;
+}
+
+@media(max-width: 768px) {
+	.techreative-header {
+		min-height: 106px;
+	}
+	#roverContent {
+		position: absolute;
+		right: 0;
+	}
+}
