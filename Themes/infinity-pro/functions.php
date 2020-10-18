@@ -420,25 +420,27 @@ function remove_atomic_block_css()
 	wp_dequeue_style('atomic-blocks-fontawesome');
 }
 
-global $enqueued_scripts;
-global $enqueued_styles;
+// add_action( 'wp_enqueue_scripts', 'crunchify_print_scripts_styles' );
+function crunchify_print_scripts_styles() {
 
-add_action( 'wp_print_scripts', 'cyb_list_scripts' );
-function cyb_list_scripts() {
+    $result = [];
+    $result['scripts'] = [];
+    $result['styles'] = [];
+
+    // Print all loaded Scripts
     global $wp_scripts;
-    global $enqueued_scripts;
-    $enqueued_scripts = array();
-    foreach( $wp_scripts->queue as $handle ) {
-        $enqueued_scripts[] = $wp_scripts->registered[$handle]->src;
-    }
-}
+    foreach( $wp_scripts->queue as $script ) :
+       $result['scripts'][] =  $wp_scripts->registered[$script]->src . ";";
+    endforeach;
 
-add_action( 'wp_print_styles', 'cyb_list_styles' );
-function cyb_list_styles() {
+    // Print all loaded Styles (CSS)
     global $wp_styles;
-    global $enqueued_styles;
-    $enqueued_styles = array();
-    foreach( $wp_styles->queue as $handle ) {
-        $enqueued_styles[] = $wp_styles->registered[$handle]->src;
-    }
+    foreach( $wp_styles->queue as $style ) :
+       $result['styles'][] =  $wp_styles->registered[$style]->src . ";";
+    endforeach;
+
+	echo "<pre>";
+	var_dump($result);
+	echo "</pre>";
+    return $result;
 }
