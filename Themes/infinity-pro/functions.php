@@ -426,45 +426,49 @@ function add_rel_preload($html, $handle, $href, $media)
 		return $html;
 
 	// var_dump($handle . ' Links To ' . $href);
-	if (strstr($handle, 'sb_instagram_styles')) {
-		$html = <<<EOT
-<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
-EOT;
-	}
-	if (strstr($handle, 'atomic-blocks-style-css')) {
-		$html = <<<EOT
-<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
-EOT;
-	}
-	if (strstr($handle, 'post-views-counter-frontend')) {
-		$html = <<<EOT
-<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
-EOT;
-	}
-	if (strstr($handle, 'infinity-ionicons')) {
-		$html = <<<EOT
-<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
-EOT;
-	}
-	if (strstr($handle, 'wp-block-library')) {
-		$html = <<<EOT
-<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
-EOT;
-	}
-	if (strstr($handle, 'dashicons')) {
-		$html = <<<EOT
-<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
-EOT;
-	}
-	if (strstr($handle, 'simple-social-icons-font')) {
-		$html = <<<EOT
-<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
-EOT;
-	}
-	if (strstr($handle, 'infinity-pro-gutenberg')) {
-		$html = <<<EOT
-<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
-EOT;
+	switch ($handle) {
+		case strstr($handle, 'sb_instagram_styles'):
+			$html = <<<EOT
+			<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
+			EOT;
+			break;
+		case strstr($handle, 'atomic-blocks-style-css'):
+			$html = <<<EOT
+			<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
+			EOT;
+			break;
+		case strstr($handle, 'post-views-counter-frontend'):
+			$html = <<<EOT
+			<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
+			EOT;
+			break;
+		case strstr($handle, 'infinity-ionicons'):
+			$html = <<<EOT
+			<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
+			EOT;
+			break;
+		case strstr($handle, 'dashicons'):
+			$html = <<<EOT
+			<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
+			EOT;
+			break;
+		case strstr($handle, 'simple-social-icons-font'):
+			$html = <<<EOT
+			<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
+			EOT;
+			break;
+		case strstr($handle, 'fontawesome-infinity'):
+			$html = <<<EOT
+			<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
+			EOT;
+			break;
+		case strstr($handle, 'wp-block-library'):
+			$html = <<<EOT
+			<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
+			EOT;
+			break;
+		default:
+			return $html;
 	}
 
 	return $html;
