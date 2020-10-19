@@ -2248,8 +2248,11 @@ body.home main#genesis-content.content,
 body.home main#genesis-content.content article {
 	margin-bottom: 0;
 	padding-bottom: 0;
+	padding-top: 0;
 	position:relative;
 }
+
+
 
 body.home div.customized-home-page-block {
 /* 	max-height: calc(100vh - 172px);
@@ -3030,3 +3033,4 @@ body.full-width-content main.content {
 		right: 0;
 	}
 }
+

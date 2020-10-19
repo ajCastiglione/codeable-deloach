@@ -40,6 +40,12 @@ include_once(get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.p
 // Include notice to install Genesis Connect for WooCommerce.
 include_once(get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php');
 
+/** Added on 10/18/2020 - enqueue fontawesome */
+wp_enqueue_style('fontawesome-infinity', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css', null, null, false);
+/** end fontawesome enqueue */
+wp_enqueue_style('infinity-globalcss', get_stylesheet_directory_uri() . '/css/global-styles.css', null, null, false);
+wp_enqueue_style('infinity-homecss', get_stylesheet_directory_uri() . '/css/home-styles.css', null, null, false);
+
 add_action('after_setup_theme', 'genesis_child_gutenberg_support');
 /**
  * Adds Gutenberg opt-in features and styling.

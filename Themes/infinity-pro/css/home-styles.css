@@ -1,0 +1,34 @@
+#genesis-content > article > header {display: none;}
+.full-width-content .content {
+    padding-top: 0px;
+}
+
+.home-vid-content a {
+    margin: 0 auto;
+}
+
+.home-vid-content {
+    height: 84px;
+}
+
+.home-vid-content a {
+  font-family: "Oswald",Helvetica,sans-serif;
+    width: 48%;
+    margin: 0 auto;
+    font-size: 38px;
+}
+
+@media screen and (max-width: 810px) {
+.home-vid-content a {
+width: 54%;
+font-size: 22px;
+}
+.home-vid-content {
+    height: 54px;
+}
+}
+
+.wp-block-video video {
+    margin-top: 0px;
+}
+

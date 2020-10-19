@@ -1,0 +1,447 @@
+.rtli {padding-top: 50px;}
+
+.breweries a:hover {color: #97c5fe;}
+
+@media only screen and (max-width: 600px) {
+  .rtli {padding-top: 0px;}
+}
+
+@media only screen and (max-width: 600px) {
+  .rt4 {padding-top: 40px;}
+}
+
+.widget ul>li {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.widget ul>li a {
+color: #ebedf0;}
+
+
+/* breweries styles */
+.breweries {
+  padding: 2rem;
+}
+
+.breweries > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 1rem;
+}
+
+
+.crunchify-matched-content-footer {
+    overflow: hidden;
+    background: #1B314E;
+    padding: 30px;
+    color: #fff;
+    border-bottom: 2px solid #ffffff40;
+}
+
+.wp-block-video video {
+    margin-top: -80px;
+}
+
+@media screen and (max-width: 810px) {
+.wp-block-video video {
+margin-top: 0;
+}
+}
+
+.drawer_tour {
+margin-left: 42%;
+display: block !important;
+    font-size: 30px;
+    border: 1px solid #6694CC;
+    border-radius: 50%;
+    width: 60px !important;
+    height: 60px !important;
+    line-height: 60px !important;
+    padding: 0px !important;
+}
+
+div.drawer_pause {display: none !important;}
+
+.rover-dropdown-toggle::after {font-family: "Font Awesome 5 Free"; font-weight: 900; 
+content: "\f0d7";
+    padding-right: 5px;
+    float: right;}
+    
+    ul.rover-nav-area ul.rover-dropdown-menu{
+min-width: 240px;
+}
+
+@media only screen and (min-width: 801px){
+.rover-swipe .slideshow_slides > figure {
+    min-height: 600px !important;
+}
+}
+
+a {color: #6694cc;}
+
+.rover-branding {display: none !important;}
+
+.drawer_streetview {display: none !important;}
+
+.techreative-toggle-hide:focus {
+    opacity: 9;
+}
+
+.rover-custom-listing-panel { display: none!important }
+.rover-report-panel { display: none!important }
+.rover-market-panel { display: none!important }
+
+.techreative-footer-widget p a {color: #fff;}
+
+.listing-nav-nav {margin-bottom: 0px !important;}
+
+div.rover-full-page-search {padding-top: 0px !important;}
+
+.rover-prop-detail-framework {
+max-width: 1600px;
+margin: 0 auto;
+}
+
+.rover-control-panel-content.container-fluid {margin-top: 40px !important;}
+
+.rover-dropdown-ul > li > a {
+  font-size: 1.4rem !important;
+}
+
+.rover-searchpanel-input.rover-select-minprice {
+    color: #000 !important;
+    font-weight: bold;
+}
+
+.rover-searchpanel-input.rover-select-maxprice {
+    color: #000 !important;
+    font-weight: bold;
+}
+
+.widget-title {
+  color: #000;
+  font-family: "Oswald",Helvetica,sans-serif;
+  font-size: 2.4rem;
+  font-weight: 300;
+  letter-spacing: 0px;
+  margin-bottom: 40px;
+  margin: 0px auto;
+  max-width: 75%;
+  overflow: hidden;
+  pointer-events: none;
+  text-align: center;
+  text-transform: uppercase;
+  width: calc(100% - 40px);
+  z-index: 2;
+}
+
+.widget-title:before, .widget-title:after {
+  border-bottom: 0.08em solid black;
+  content: " ";
+  display: inline-block;
+  margin: 0 10px;
+  transform: translateY(-0.4em);
+  width: 22%;
+}
+
+.data-acres {display: none !important;
+}
+
+.rover-framework.rover .rover-button {
+  background: #002A5C !important;
+  border-radius: 0px !important;
+  border: 0px !important;
+  color: #fff !important;
+  line-height: 20px !important;
+  padding: 3px 18px 0px 18px !important;
+}
+
+.rover-framework.rover .rover-button:hover {background: #1F497B !important;}
+
+.rover-save-search-button:hover {background: #0C223F !important;}
+
+.rover-framework [class^="rover-col-"] label, .rover-framework [class^="rover-col-"] label input {
+  color: #000;
+}
+
+.rover-dropdown:hover {
+  background: #F3F3F3;
+}
+
+.rover-label, .rover-price-label {
+  font-weight: 700 !important;
+}
+
+.rover-blue {
+  color: #0C223F !important;
+}
+
+.rover-center {
+  background: #0C223F;
+  color: #FFF !important;
+  padding: 4px 8px;
+  text-align: center;
+}
+
+.rover-center:hover {
+  background: #4169E1;
+}
+
+.rover-marker-info .rover-prop {
+  font-size: 14px;
+  padding-bottom: 6px;
+}
+
+nav.rover-searchpanel .search-panel-container input.tt-input {
+  width: 125% !important;
+}
+
+.ab-layout-column-wrap {
+  display: inline-flex;
+  grid-gap: 0 0em;
+}
+
+.wp-block-image {
+  margin-bottom: 0em;
+}
+
+.upper-left {
+  margin-bottom: -10px;
+  margin-right: 2.5px; 
+  margin-top: 5px; 
+}
+.upper-right {
+  margin-bottom: -10px;
+  margin-left: 2.5px;
+  margin-top: 5px;
+}
+.lower-left {
+  margin-right: 2.5px;
+}
+.lower-right {
+  margin-left: 2.5px;
+}
+
+figure.aligncenter {
+  margin: 0 auto;
+}
+
+.site-header {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 4px;
+}
+
+.genesis-nav-menu .sub-menu a {
+  padding: 10px 20px;
+}
+
+.genesis-nav-menu a {
+  letter-spacing: 0px;
+}
+
+.site-inner {
+  max-width: 100%;
+}
+
+h1,h2,h3,h4 {
+  font-family: "Oswald", Helvetica, sans-serif; 
+  font-weight: 500;
+}
+h2 {
+  font-size: 3.8rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+
+.widget-title {
+  font-family: "Oswald",Helvetica,sans-serif;
+}
+
+input, select, textarea {
+  font-family: 'Lato', sans-serif;
+}
+
+.prop-header {
+  background-color: #F6F8FC !important;
+  border-bottom: 1px solid #eee !important;
+}
+
+nav.rover-searchpanel p.rover-msg {
+  display: none;
+}
+
+.genesis-nav-menu a:hover {
+  background: #002A5C;
+  color: #FFF;
+}
+
+.genesis-nav-menu .current-menu-item > a {
+  color: #335D8F;
+}
+
+.genesis-nav-menu .current-menu-item > a:hover,
+.genesis-nav-menu .menu-item:hover, 
+.genesis-responsive-menu .genesis-nav-menu a:hover {
+  color: #FFF !important;
+}
+
+.front-page .white .genesis-nav-menu a,
+.header-image.front-page .genesis-nav-menu a,
+.genesis-nav-menu a {
+  color: #002A5C;
+  font-family: "Oswald",Helvetica,sans-serif;
+  font-size: 1.325rem;
+  line-height: 1.222;
+}
+
+.landing-page .entry-content h4, .lead-capture-page .entry-content h4 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.site-footer {
+    display: none;
+}
+
+.site-footer {
+  padding: 0px;
+}
+
+.footer-widgets .widget-area {
+  padding-top: 0px;
+}
+
+.footer-widgets .wrap {
+  margin: 0 auto;
+  max-width: 94%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.footer-widgets {
+  border-top: none;
+}
+
+._1drm._1dro {
+  background: #fff;
+}
+
+.fb_iframe_widget {
+    margin-top: 35px;
+}
+
+/* Instagram widget image size fix */
+
+.sbi_photo_wrap, #sb_instagram #sbi_images .sbi_item {
+max-height: 200px;
+}
+
+
+/* Home video CSS */
+
+.home-vid {
+  position: relative;
+}
+
+.home-vid figure {
+    max-height: calc(100vh - 190px);
+    height: calc(56vw);
+    position: relative;
+    width: 101%;
+    overflow: hidden;
+}
+
+.home-vid-content {
+    width: 900px;
+    height: 220px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    z-index: 1;
+}
+
+.home-vid-content h1 {
+	color: #ffffff;
+	text-align: center;
+	font-family: "Oswald",Helvetica,sans-serif;
+	font-size: 60px;
+}
+
+.home-vid-content h2 {
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Oswald",Helvetica,sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.home-vid-content a {
+    color: #ffffff;
+    border: 2px solid #fff;
+    background-color: rgba(0,0,0,.3);
+    display: block;
+    width: 148px;
+    text-align: center;
+    padding: 5px;
+    margin: 25px auto 0 auto;
+}
+
+.home-vid-content a:hover {
+  background-color: rgba(12, 34, 63,1);
+}
+
+@media only screen and (max-width: 800px)  {
+  .home-vid-content {
+    height: 650px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home-vid-content h1 {
+      font-size: 32px;
+      line-height: 50px;
+      padding-top: 10%;
+  }
+  .home-vid-content h2 {
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .home-vid-content h1 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+          padding-top: 10%;
+}
+.home-vid-content h2 {
+  font-size: 16px;
+    text-transform: capitalize;
+}
+}
+
+@media only screen and (max-width: 360px) {
+  .home-vid-content h1 {
+      font-size: 18px;
+      line-height: 18px;
+      padding-top: 10%;
+  }
+  .home-vid-content h2 {
+    font-size: 12px;
+    text-transform: capitalize;
+  }
+}
+
+.widget-title:before, .widget-title:after {display: none;}
